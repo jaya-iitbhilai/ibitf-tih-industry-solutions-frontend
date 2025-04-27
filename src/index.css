@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
+:root {
+  --dark-blue-color: #050a30; /* Deep navy */
+}
+
 * {
-  margin: 0;
-  padding: 0;
+  /* margin: 0; */
+  /* padding: 0; */
   box-sizing: border-box;
   /* text-decoration: none; */
 }
