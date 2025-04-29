@@ -89,11 +89,11 @@ const HomePage = () => {
 
       {/* About Section */}
       <section className="py-16">
-        <div className="container mx-auto px-6">
+        <div className="container mx-auto px-20">
           <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
             About the Initiative
           </h2>
-          <div className="w-24 h-1 bg-gray-300 mx-auto mb-8"></div>
+          {/* <div className="w-24 h-1 bg-gray-300 mx-auto mb-8"></div> */}
           <p className="text-lg text-gray-600 mb-4 text-center">
             IIT Bhilai Innovation & Technology Foundation (IBITF) collaborates
             with the Indian industry to address operational challenges through
@@ -119,7 +119,7 @@ const HomePage = () => {
       </section>
 
       {/* How It Works Section */}
-      <section className="py-16 bg-gray-50">
+      {/* <section className="py-16 bg-gray-50">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">
             How the Process Works
@@ -146,10 +146,59 @@ const HomePage = () => {
             </div>
           </div>
         </div>
+      </section> */}
+
+      <section className="py-16 px-20 bg-white">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+            How the Process Works
+          </h2>
+          <p className="text-center text-gray-500 mb-12">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+            {[
+              {
+                title: "Submit your problem statement using our online form",
+                head: "Submit Your Problem",
+                icon: "📝",
+              },
+              {
+                title:
+                  "Our team evaluates and matches your challenge with the right startup",
+                head: "Challenge Evaluation",
+                icon: "🧠",
+              },
+              {
+                title: "Collaborate with the startup to co-develop solutions",
+                head: "Collaborate with Startup",
+                icon: "🤝",
+              },
+              {
+                title: "Implement and scale the solution",
+                head: "Implement & Scale Solution",
+                icon: "🚀",
+              },
+            ].map((step, index) => (
+              <div key={index} className="flex flex-col items-center">
+                <div className="relative mb-4">
+                  <div className="w-24 h-24 rounded-full border-2 border-gray-200 flex items-center justify-center bg-gray-600 text-white text-3xl">
+                    {step.icon}
+                  </div>
+                </div>
+                <h3 className="text-lg font-semibold text-gray-800 mb-2">
+                  {step.head}
+                </h3>
+                <p className="text-sm text-gray-500 max-w-xs">{step.title}</p>
+              </div>
+            ))}
+          </div>
+        </div>
       </section>
 
       {/* Success Stories Preview */}
-      <section className="py-16 bg-indigo-50">
+      <section className="py-16 px-20 bg-indigo-50">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-gray-800 mb-10 text-center">
             Success Stories
@@ -167,8 +216,8 @@ const HomePage = () => {
                 <div className="p-6">
                   <h3 className="text-xl font-bold text-gray-800 mb-2">
                     {index === 0
-                      ? "Improving Supply Chain Efficiency for [Company Name]"
-                      : "Revolutionizing Healthcare Diagnostics in Partnership with [Institution Name]"}
+                      ? "Improving Supply Chain Efficiency for [IIT Bhilai]"
+                      : "Revolutionizing Healthcare Diagnostics in Partnership with [IIT Bhilai]"}
                   </h3>
                   <p className="text-gray-600">
                     Brief description of the project and its impact on the
